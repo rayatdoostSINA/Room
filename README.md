@@ -1,11 +1,123 @@
-<div align="center">
+<div align="center" dir="rtl">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# 📚 کلاس‌بان (ClassCMS)
+### سامانه هوشمند دفتر کلاسی یکپارچه، حضور و غیاب سریع و دفتر نمرات
 
-  <h1>Built with AI Studio</h2>
+[![React](https://img.shields.io/badge/React-19-blue.svg?style=flat-square&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8.svg?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg?style=flat-square)](LICENSE)
+[![RTL Supported](https://img.shields.io/badge/Layout-Full%20RTL-emerald.svg?style=flat-square)](#)
+[![Jalali Calendar](https://img.shields.io/badge/Calendar-Jalali%20(Shamsi)-orange.svg?style=flat-square)](#)
 
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
+<p align="center">
+  <b>دفتر کلاسی جامع و مدرن برای دبیران و مدارس ایران</b><br>
+  ترکیب حضور و غیاب، نمرات و انضباط در یک جدول اکسل‌مانند یکپارچه، با تقویم شمسی و چاپ کارنامه استاندارد A4.
+</p>
 
 </div>
+
+---
+
+## 📖 معرفی پروژه
+
+**کلاس‌بان (ClassCMS)** پاسخی به نیاز دبیران و مدیران آموزشی برای رهایی از فرم‌های پراکنده و ثبت‌های مکرر است. این سامانه تمامی جریان‌های کاری روزمره معلم را در **یک جدول مستر یکپارچه (Unified Master Table)** تجمیع می‌کند:
+
+- **مشخصات دانش‌آموزان**: نام، نام خانوادگی، شماره کلاسی و کد ملی در ستون‌های ثابت (Sticky) سمت راست.
+- **حضور و غیاب جلسات (ستون‌های تقویم شمسی)**: ثبت تک‌کلیکی وضعیت‌ها (`حاضر`، `غایب غیرموجه`، `غایب موجه`، `تأخیر`).
+- **دفتر نمرات و آزمون‌ها**: ورود مستقیم نمرات (۰ تا ۲۰)، بازخورد کیفی، محاسبه خودکار معدل وزنی بر اساس ضرایب آزمون‌ها.
+- **انضباط پویا (پایه ۲۰.۰)**: ثبت امتیازات تشویقی و موارد انضباطی با دکمه‌های سریع `+` و `-`.
+- **کارنامه رسمی چاپی (A4)**: صدور تک‌برگی کارنامه مستمر و انضباطی برای ارائه به اولیا و مدرسه.
+
+---
+
+## ✨ امکانات و قابلیت‌ها
+
+| ماژول | ویژگی‌ها |
+| :--- | :--- |
+| **جدول یکپارچه (Master Grid)** | اسکرول بهینه، سرستون‌های گروهی، ستون‌های ثابت دانش‌آموز، رنگ‌بندی شفاف |
+| **حضور و غیاب هوشمند** | کلید «همه حاضر»، پایش غیبت‌های غیرموجه (هشدار خودکار در صورت > ۳ غیبت در ماه) |
+| **دفتر نمرات پیشرفته** | اعتبارسنجی بازه ۰ تا ۲۰، ضرایب آزمون‌ها، محاسبه زنده میانگین کلاس و رتبه کلاسی |
+| **فیلترها و جستجوی سریع** | فیلتر دانش‌آموزان هشداردار، دانش‌آموزان ممتاز (معدل ۱۸+)، جستجوی زنده کد ملی و نام |
+| **سوییچ کلاس‌ها** | پشتیبانی از چندین کلاس (ریاضی دهم، فیزیک یازدهم، شیمی دوازدهم و ...) |
+| **کارنامه چاپی A4** | قالب رسمی منطبق با استانداردهای آموزش و پرورش با سربرگ و محل امضاها |
+| **ذخیره‌سازی آفلاین** | نگهداری پایدار داده‌ها در `LocalStorage` مرورگر بدون نیاز به سرور |
+
+---
+
+## 🛠️ ساختار فنی و معماری
+
+- **چارچوب فرانت‌اند**: React 19 با معماری کامپوننت‌محور و تایپ‌های قوی TypeScript
+- **استایل‌دهی و چیدمان**: Tailwind CSS v4 با پشتیبانی بومی از `dir="rtl"` و فونت وزیرمتن (`Vazirmatn`)
+- **محاسبات تاریخ و تقویم**: کتابخانه `jalaali-js` برای تبدیل و اعتبارسنجی دقیق تاریخ‌های هجری شمسی
+- **آیکون‌ها**: Lucide React
+- **طراحی ریسپانسیو**: بهینه‌سازی برای تبلت‌ها، لپ‌تاپ‌ها و نمایشگرهای دسکتاپ عریض
+
+---
+
+## 🚀 راهنمای نصب و اجرای محلی
+
+### ۱. کلون کردن مخزن
+```bash
+git clone https://github.com/YOUR_USERNAME/classcms.git
+cd classcms
+```
+
+### ۲. نصب بسته‌ها
+```bash
+npm install
+# یا با استفاده از pnpm:
+# pnpm install
+# یا با استفاده از bun:
+# bun install
+```
+
+### ۳. اجرای برنامه در حالت توسعه
+```bash
+npm run dev
+```
+برنامه به صورت پیش‌فرض روی پورت ۳۰۰۰ در آدرس `http://localhost:3000` اجرا خواهد شد.
+
+### ۴. بیلد برای محیط عملیاتی (Production)
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 📂 ساختار پوشه‌بندی پروژه
+
+```
+classcms/
+├── .gitignore             # فایل نادیده‌گیری گیت (پکیج‌ها، لاگ‌ها، خروجی‌های بیلد)
+├── index.html             # سند اصلی HTML با فونت وزیرمتن و تنظیمات RTL
+├── package.json           # وابستگی‌ها و اسکریپت‌های پروژه
+├── tsconfig.json          # پیکربندی کامپایلر تایپ‌اسکریپت
+├── vite.config.ts         # تنظیمات ابزار بیلد Vite
+└── src/
+    ├── App.tsx            # جدول جامع یکپارچه، کامپوننت‌های مودال و کارنامه
+    ├── index.css          # استایل‌های سراسری، فونت و قوانین چاپ A4 (@media print)
+    ├── initialData.ts     # داده‌های اولیه پیش‌فرض دبیرستان‌های ایران
+    ├── main.tsx           # نقطه ورود React DOM
+    ├── types.ts           # تعاریف داده‌ای (Student, Session, Assessment, Grade)
+    └── utils/
+        └── jalali.ts      # توابع کمکی تقویم شمسی و ارقام فارسی
+```
+
+---
+
+## 🤝 مشارکت در توسعه (Contributing)
+
+مشارکت‌های شما به بهبود این پروژه کمک شایانی می‌کند!
+۱. مخزن را فورک (`Fork`) کنید.
+۲. یک برنچ جدید برای ویژگی خود بسازید (`git checkout -b feature/AmazingFeature`).
+۳. تغییرات را کامیت کنید (`git commit -m 'feat: Add some AmazingFeature'`).
+۴. به برنچ پوش کنید (`git push origin feature/AmazingFeature`).
+۵. یک درخواست ادغام (`Pull Request`) ارسال نمایید.
+
+---
+
+## 📜 مجوز (License)
+
+این پروژه تحت مجوز نرم‌افزاری **Apache License 2.0** منتشر شده است. استفاده آزاد و توسعه آن با ذکر نام پروژه مجاز می‌باشد.

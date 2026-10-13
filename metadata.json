@@ -1,0 +1,6 @@
+{
+  "name": "دفتر کلاسی یکپارچه — سامانه مدیریت حضور و غیاب و نمرات (ClassCMS)",
+  "description": "سامانه مدیریت کلاسی یکپارچه با جدول جامع اسامی، حضور و غیاب روزانه، دفتر نمرات، انضباط پویا و کارنامه ۳۶۰ درجه",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
